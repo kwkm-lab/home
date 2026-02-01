@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
         once: true,
     });
 
+    // スクロール時にNavbarの背景を変更
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
     // projects.jsonを読み込んでプロジェクトカードを生成
     fetch('projects.json')
         .then(response => response.json())

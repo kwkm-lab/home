@@ -24,9 +24,23 @@ main {
     flex-grow: 1; /* mainコンテンツが利用可能なスペースを占める */
 }
 
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+.navbar-logo {
+    height: 35px;
+}
+
 .hero-header {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     border-bottom: 5px solid var(--primary-color);
+    padding-top: 100px; /* Navbarの高さ分を考慮 */
 }
 
 .hero-header .display-4 {
