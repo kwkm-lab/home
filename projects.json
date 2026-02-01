@@ -1,0 +1,14 @@
+[
+    {
+        "type": "games",
+        "title": "Race Game",
+        "description": "シンプルなレースゲームです。",
+        "path": "products/games/race_game/index.html"
+    },
+    {
+        "type": "games",
+        "title": "タイピング",
+        "description": "シンプルなタイピングゲームです。",
+        "path": "products/games/typing/index.html"
+    }
+]
