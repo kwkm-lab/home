@@ -1,1 +1,27 @@
-<h1>作成中</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D レースゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="race-info">GOALまで: 3000m</div>
+        <div id="speedometer">速度: 0 km/h</div>
+        <div id="hp-bar-container">
+            HP: <div id="hp-bar"></div>
+        </div>
+        <div id="countdown">3</div>
+        <div id="game-over-screen" style="display: none;">
+            <h1 id="game-over-message"></h1>
+            <button id="reset-button">もう一度プレイ</button>
+        </div>
+    </div>
+
+    <!-- Three.jsライブラリをCDNから読み込む -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
