@@ -27,6 +27,14 @@ canvas {
     font-weight: bold;
 }
 
+#timer {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 #speedometer {
     position: absolute;
     top: 20px;
@@ -100,11 +108,19 @@ canvas {
     font-size: 48px;
     font-weight: bold;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.9);
+    pointer-events: auto;
 }
 
 #game-over-screen h1 {
     margin-bottom: 30px;
     font-size: 1em; /* 親のfont-sizeに合わせる */
+}
+
+#game-over-screen h2 {
+    font-size: 0.6em;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-weight: normal;
 }
 
 #game-over-screen button {
@@ -116,6 +132,7 @@ canvas {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
+    pointer-events: auto;
 }
 
 #game-over-screen button:hover {
