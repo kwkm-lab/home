@@ -3,12 +3,18 @@
         "type": "games",
         "title": "Race Game",
         "description": "シンプルなレースゲームです。",
-        "path": "products/games/race_game/index.html"
+        "path": "products/games/race-game/index.html"
     },
     {
         "type": "games",
         "title": "タイピング",
         "description": "シンプルなタイピングゲームです。",
         "path": "products/games/typing/index.html"
+    },
+    {
+        "type": "games",
+        "title": "シューティング",
+        "description": "シンプルなシューティングゲームです。",
+        "path": "products/games/shooting-game/index.html"
     }
 ]
