@@ -7,10 +7,21 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 画面全体の高さを最小とする */
+}
+
+main {
+    flex-grow: 1; /* mainコンテンツが利用可能なスペースを占める */
 }
 
 .hero-header {
@@ -59,4 +70,5 @@ h2 {
 
 .footer {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    margin-top: auto; /* フッターを可能な限り下部に押しやる */
 }
